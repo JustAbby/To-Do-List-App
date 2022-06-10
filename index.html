@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Todo List App</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="">Things to do today</h1>
+        <div class="card">
+          <div class="flex">
+            <input placeholder="Add new todo" />
+              <button @click="addItem" :disabled="newItem.length === 0">Add</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <h2>Todo</h2>
+            <ul class="list">
+              <li class="list-item">
+                <div class="list-item-toggle"></div><span>Wash the car</span>
+                <div class="list-item-delete">X</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <script src="/script.js"></script>
+     
+</body>
+</html>
